@@ -2,7 +2,7 @@
 
 TableCount=300
 EVENTS=0
-TIME=100
+TIME=300
 LUA=oltp_read_only
 LUA=oltp_write_only
 LUA=oltp_insert
@@ -46,7 +46,7 @@ x=0; while  [ $x -le 7 ]; do
   TableSize=5000
   TableCount=100
   ThreadCount=${ThreadArr[$x]}
-  ThreadCount=1000
+  ThreadCount=200
    ((x=x+1))
 
 echo ${PRIMARY_IP}
