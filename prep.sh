@@ -5,7 +5,7 @@ echo mysql -h $HOST -p${PASS} -u${USER} -P3306
 mysql -h $HOST -p${PASS} -u${USER} -P3306 -e "show databases"
 
 IP=${HOST}
-CNT=100
+CNT=128
 source $(dirname $0)/config.sh $IP
 
 MYDB=ndb5mx${CNT}

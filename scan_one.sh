@@ -1,9 +1,9 @@
 #!/bin/bash
 
-TableCount=300
+TableCount=128
 EVENTS=0
-TIME=300
-LUA=oltp_read_only
+TIME=30
+LUA=otp_read_only
 LUA=oltp_write_only
 LUA=oltp_insert
 LUA=oltp_write_only
@@ -39,29 +39,23 @@ y=0; while  [ $y -le 20 ]; do
 c=0
    ((y=y+1))
   TableCount=$y
-x=0; while  [ $x -le 7 ]; do
+x=0; while  [ $x -le 32 ]; do
+   ((x=x+1))
   core=${Cores[0]}
   MYDB=${MYDBArr[0]}
   dbid=${MYDB}
   TableSize=5000
-  TableCount=100
-  ThreadCount=${ThreadArr[$x]}
-  ThreadCount=200
-   ((x=x+1))
+  #ThreadCount=${ThreadArr[$x]}
+  #TableCount=128
+  #ThreadCount=128
+  TableCount=$x
+  ThreadCount=$x
 
 echo ${PRIMARY_IP}
 echo ${PRIMARY_PORT}
  MYSYSBENCH="sysbench --mysql-host=${PRIMARY_IP} --mysql-port=${PRIMARY_PORT} --mysql-password=${TEST_PASS} --mysql-user=${TEST_USER} --db-driver=mysql "
 
-LUA=oltp_read_write
- TNOW=`date +%Y%m%d_%H:%M:%S`
- WRFILELOG=${PRE}_wr_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
- ${MYSYSBENCH} $LUA --threads=$ThreadCount --mysql-db=${MYDB} --tables=${TableCount} --table-size=${TableSize} --events=$EVENTS --time=${TIME} --range_selects=off --db-ps-mode=disable --report-interval=1 run | tee $WRFILELOG
-  RC=$?
- ETNOW=`date +%Y%m%d_%H:%M:%S`
- #echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
-exit
-
+ echo $MYSYSBENCH
 LUA=oltp_read_only
  TNOW=`date +%Y%m%d_%H:%M:%S`
  ROFILELOG=${PRE}_ro_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
@@ -79,7 +73,15 @@ LUA=oltp_write_only
   RC=$?
  ETNOW=`date +%Y%m%d_%H:%M:%S`
   echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
+LUA=oltp_read_write
+ TNOW=`date +%Y%m%d_%H:%M:%S`
+ WRFILELOG=${PRE}_wr_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
+ ${MYSYSBENCH} $LUA --threads=$ThreadCount --mysql-db=${MYDB} --tables=${TableCount} --table-size=${TableSize} --events=$EVENTS --time=${TIME} --range_selects=off --db-ps-mode=disable --report-interval=1 run | tee $WRFILELOG
+  RC=$?
+ ETNOW=`date +%Y%m%d_%H:%M:%S`
+ echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
 
-exit
+
  done
+exit
 done
