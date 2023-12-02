@@ -57,7 +57,6 @@
   150  cd local/
   151  vim ../scan_one.sh 
   152  ../scan_one.sh 
-  153  sudo apt-get install mysql-dev
   154  sudo apt-get install mysql-client
   156  ../scan_one.sh 
   158  vim config.sh 
