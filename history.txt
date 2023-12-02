@@ -1,0 +1,101 @@
+    2  curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.deb.sh | sudo bash
+    3  sudo apt -y install sysbench
+    4  which sysbench
+    9  git clone https://github.com/Shengliang/serverless.git
+   10  cd serverless/
+   20  ssh-keygen
+   25  cat id_rsa.pub 
+   27  cd serverless/
+   28  git push origin main:main
+   29  vi ~/.gitconfig
+   30  git rup
+   31  git push origin main:main
+   34  mkdir work
+   35  cd work
+   36  git clone git@github.com:Shengliang/serverless.git
+   38  cd serverless/
+   42  mv *.log 1c
+   46  git push origin main:main
+   49  cd serverless/
+   62  cat /proc/cpuinfo 
+   67  sudo apt install mysql-server
+   68  sudo service mysql status
+   69  sudo ss -tap | grep mysql
+   70  cat /etc/mysql/mysql.cnf.d/mysqld.cnf
+   71  cd /etc/mysql/
+   75  cat mysqld.cnf 
+   76  cat mysqld.cnf  | more
+   77  ip address show
+   79  vim mysqld.cnf 
+   80  sudo vim mysqld.cnf
+   81  sudo journalctl -u mysql
+   82  ps -eaf |grep mysqld
+   83  sudo ss -tap | grep mysql
+   84  sudo systemctl restart mysql.service
+   85  sudo ss -tap | grep mysql
+   86  mysql -u root
+   87  which mysql
+   88  mysql -u root -p
+   89  sudo grep 'temporary password' /var/log/mysqld.log
+   91  vi mysqld.cnf 
+   92  grep error mysqld.cnf
+   93  sudo grep 'temporary password' /var/log/mysql/error.log
+   94  vim /var/log/mysql/error.log
+  113  sudo systemctl restart mysql.service
+  115  sudo mysql -u root
+  116  mysql -u ssl -p
+  121  sudo mysql -u root
+  126  vim mysqld.cnf 
+  127  cd /var/lib
+  129  cd mysql
+  131  sudo su -
+  143  vim config.sh 
+  145  vim prep.sh 
+  146  which sysbench
+  147  time ./prep.sh 
+  149  mkdir local
+  150  cd local/
+  151  vim ../scan_one.sh 
+  152  ../scan_one.sh 
+  153  sudo apt-get install mysql-dev
+  154  sudo apt-get install mysql-client
+  156  ../scan_one.sh 
+  158  vim config.sh 
+  159  source config.sh 
+  163  cd local/
+  164  ls
+  166  vim ../scan_one.sh 
+  167  run_sql
+  168  vim ../scan_one.sh 
+  169  ../scan_one.sh 
+  170  vim ../scan_one.sh 
+  171  ../scan_one.sh 
+  177  ../sysp.sh 
+  178  vim ../scan_one.sh 
+  179  ../scan_one.sh 
+  180  ../sysp.sh 
+  181  run_sql
+  184  vim ../scan_one.sh 
+  185  ../scan_one.sh 
+  186  ../sysp.sh 
+  187  vim ../scan_one.sh 
+  188  ../scan_one.sh 
+  189  ls -rtl
+  191  ../sysp.sh 
+  192  run_sql
+  193  ls -rtl
+  194  vim ../scan_one.sh 
+  195  ../scan_one.sh 
+  196  vim ../scan_one.sh 
+  197  ../scan_one.sh 
+  198  run_sql
+  199  run_query "show variables"
+  200  run_query "show variables" > show_variables.txt
+  201  ls -rtl
+  204  ../sysp.sh | tee index.txt
+  210  git status .
+  215  git ci -a -m "Update t2.micro"
+  216  git log
+  217  git push origin main:main
+  220  vim README.md 
+  222  history  > history.txt
