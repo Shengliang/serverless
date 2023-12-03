@@ -1,0 +1,13 @@
+    8  curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.deb.sh | sudo bash
+    9  sudo apt -y install sysbench
+   10  sudo apt install mysql-server
+   11  sudo mysql -u root 
+   12  sudo apt-get install mysql-client
+   13  git clone git@github.com:Shengliang/serverless.git
+   15  cd serverless/
+   17  vim key.sh 
+   18  vim create_user.sql
+   19  sudo mysql -u root
+   20  mysql -u ssl -privos
+   23  vim prep.sh 
+   25  history > setup.txt
