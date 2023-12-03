@@ -10,7 +10,7 @@ source $(dirname $0)/config.sh $IP
 
 MYDB=ndb5mx${CNT}
 MYDB=sbtest
-TableSize=5000
+TableSize=1000
 TableCount=${CNT}
 EVENTS=30
 TIME=30

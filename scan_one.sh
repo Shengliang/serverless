@@ -31,7 +31,7 @@ ThreadArr=(1000 512 256 128 64 32 16 8 4 2 1)
 ThreadArr=(512 256 128 64 32 16 8 4 2 1)
 ThreadArr=(256 128 64 32 16 8 4 2 1)
 ThreadArr=(128 64 32 16 8 4 2 1)
-ThreadArr=(90 64 32 16 8 4 2 1)
+ThreadArr=(32 16 8 4 2 1)
 
 PRE="r$$"
 
@@ -39,17 +39,14 @@ y=0; while  [ $y -le 20 ]; do
 c=0
    ((y=y+1))
   TableCount=$y
-x=0; while  [ $x -le 32 ]; do
-   ((x=x+1))
+x=0; while  [ $x -le 5 ]; do
   core=${Cores[0]}
   MYDB=${MYDBArr[0]}
   dbid=${MYDB}
   TableSize=5000
-  #ThreadCount=${ThreadArr[$x]}
-  #TableCount=128
-  #ThreadCount=128
-  TableCount=$x
-  ThreadCount=$x
+  ThreadCount=${ThreadArr[$x]}
+  TableCount=${ThreadArr[$x]}
+   ((x=x+1))
 
 echo ${PRIMARY_IP}
 echo ${PRIMARY_PORT}

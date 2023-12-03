@@ -60,3 +60,37 @@ HKWL2VJMF7:aws bytedance$ aws ec2 describe-export-image-tasks --export-image-tas
         }
     ]
 }
+
+HKWL2VJMF7:aws bytedance$ aws ec2 describe-export-image-tasks --export-image-task-ids  export-ami-066069302d28212e7
+{
+    "ExportImageTasks": [
+        {
+            "ExportImageTaskId": "export-ami-066069302d28212e7",
+            "S3ExportLocation": {
+                "S3Bucket": "shengliangsong",
+                "S3Prefix": "exports/"
+            },
+            "Status": "completed",
+            "Tags": []
+        }
+    ]
+}
+
+HKWL2VJMF7:aws bytedance$ aws s3 ls  s3://shengliangsong
+                           PRE exports/
+                           PRE img/
+                           PRE pub/
+2023-12-02 18:59:11          0 vmimportexport_write_verification
+HKWL2VJMF7:aws bytedance$ aws s3 ls  s3://shengliangsong/exports
+                           PRE exports/
+HKWL2VJMF7:aws bytedance$ aws s3 ls  s3://shengliangsong/exports/
+2023-12-02 18:41:39          0
+2023-12-02 19:10:31 1057040896 export-ami-066069302d28212e7.vmdk
+
+#Speed about 30MB/s
+HKWL2VJMF7:aws bytedance$ aws s3 cp  s3://shengliangsong/exports/export-ami-066069302d28212e7.vmdk export-ami-066069302d28212e7.vmdk
+download: s3://shengliangsong/exports/export-ami-066069302d28212e7.vmdk to ./export-ami-066069302d28212e7.vmdk
+
+HKWL2VJMF7:aws bytedance$ ls
+export-ami-066069302d28212e7.vmdk	role-policy.json			trust-policy.json
+export.aim.sh				tmp
