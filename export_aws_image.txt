@@ -1,0 +1,62 @@
+# https://docs.aws.amazon.com/vm-import/latest/userguide/required-permissions.html#vmimport-role
+# https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport_image.html
+HKWL2VJMF7:aws bytedance$ aws iam create-role --role-name vmimport --assume-role-policy-document "file://trust-policy.json"
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "vmimport",
+        "RoleId": "AROAYRJMVFSSD4KFYSGWB",
+        "Arn": "arn:aws:iam::586893569188:role/vmimport",
+        "CreateDate": "2023-12-03T02:52:31+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "vmie.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole",
+                    "Condition": {
+                        "StringEquals": {
+                            "sts:Externalid": "vmimport"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
+HKWL2VJMF7:aws bytedance$ vim role-policy.json
+HKWL2VJMF7:aws bytedance$ aws iam put-role-policy --role-name vmimport --policy-name vmimport --policy-document "file://role-policy.json"
+HKWL2VJMF7:aws bytedance$ aws ec2 export-image --image-id ami-02bb4121e575ed8f5 --disk-image-format VMDK --s3-export-location S3Bucket=shengliangsong,S3Prefix=exports/
+{
+    "DiskImageFormat": "VMDK",
+    "ExportImageTaskId": "export-ami-066069302d28212e7",
+    "ImageId": "ami-02bb4121e575ed8f5",
+    "Progress": "0",
+    "S3ExportLocation": {
+        "S3Bucket": "shengliangsong",
+        "S3Prefix": "exports/"
+    },
+    "Status": "active",
+    "StatusMessage": "validating"
+}
+
+
+HKWL2VJMF7:aws bytedance$ aws ec2 describe-export-image-tasks --export-image-task-ids  export-ami-066069302d28212e7
+{
+    "ExportImageTasks": [
+        {
+            "ExportImageTaskId": "export-ami-066069302d28212e7",
+            "Progress": "85",
+            "S3ExportLocation": {
+                "S3Bucket": "shengliangsong",
+                "S3Prefix": "exports/"
+            },
+            "Status": "active",
+            "StatusMessage": "converting",
+            "Tags": []
+        }
+    ]
+}
