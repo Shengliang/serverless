@@ -11,3 +11,14 @@
    20  mysql -u ssl -privos
    23  vim prep.sh 
    25  history > setup.txt
+
+   50  vim /etc/mysql/mysql.conf.d/mysqld.cnf
+   51  ip address show
+   52  sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+   53  sudo systemctl restart mysql.service
+   54  sudo ss -tap | grep mysql
+
+   57  sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+   58  sudo systemctl restart mysql.service
+   61  sudo mysql -u root
+   64  vim README.md
