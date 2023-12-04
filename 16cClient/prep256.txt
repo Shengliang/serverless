@@ -1,0 +1,4 @@
+Prepare 256 table x 1Million rows
+real	11m53.738s
+user	5m46.014s
+sys	0m25.909s

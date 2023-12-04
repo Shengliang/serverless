@@ -1,15 +1,15 @@
 #!/bin/bash
 
-TableCount=128
+TableCount=256
 EVENTS=0
-TIME=300
+TIME=600
 LUA=otp_read_only
 LUA=oltp_write_only
 LUA=oltp_insert
 LUA=oltp_write_only
 LUA=oltp_read_write
 
-MYDBArr=(sbtest1M)
+MYDBArr=(sbtest1Mx256)
 TableSizeArr=(1000000)
 
 source key.sh
@@ -43,12 +43,11 @@ x=0; while  [ $x -le 5 ]; do
   core=${Cores[0]}
   MYDB=${MYDBArr[0]}
   dbid=${MYDB}
-  TableSize=1000
+  TableSize=1000000
   ThreadCount=${ThreadArr[$x]}
   TableCount=${ThreadArr[$x]}
-  ThreadCount=128
-  TableCount=128
-  ThreadCount=512
+  ThreadCount=256
+  ThreadCount=256
    ((x=x+1))
 
 echo ${PRIMARY_IP}
