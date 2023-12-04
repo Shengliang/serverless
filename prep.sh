@@ -8,17 +8,16 @@ IP=${HOST}
 CNT=128
 source $(dirname $0)/config.sh $IP
 
-MYDB=ndb5mx${CNT}
-MYDB=sbtest
-TableSize=1000
+MYDB=sbtest1M
+TableSize=1000000
 TableCount=${CNT}
 EVENTS=30
 TIME=30
 ThreadCount=${TableCount}
-ThreadCount=4
+ThreadCount=16
 LUA=oltp_read_write
 
-run_query "drop database if exists $MYDB"
+#run_query "drop database if exists $MYDB"
 run_query "create database $MYDB"
 run_query "show databases"
 

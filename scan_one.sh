@@ -2,22 +2,22 @@
 
 TableCount=128
 EVENTS=0
-TIME=30
+TIME=300
 LUA=otp_read_only
 LUA=oltp_write_only
 LUA=oltp_insert
 LUA=oltp_write_only
 LUA=oltp_read_write
 
-MYDBArr=(sbtest)
-TableSizeArr=(5000)
+MYDBArr=(sbtest1M)
+TableSizeArr=(1000000)
 
 source key.sh
 
 export TEST_USER=$USER
 export TEST_PASS=$PASS
 
-Cores=(1)
+Cores=(128)
 IPArr=($HOST)
 IPPort="3306"
 export PRIMARY_IP=$IPArr
@@ -43,9 +43,12 @@ x=0; while  [ $x -le 5 ]; do
   core=${Cores[0]}
   MYDB=${MYDBArr[0]}
   dbid=${MYDB}
-  TableSize=5000
+  TableSize=1000
   ThreadCount=${ThreadArr[$x]}
   TableCount=${ThreadArr[$x]}
+  ThreadCount=128
+  TableCount=128
+  ThreadCount=512
    ((x=x+1))
 
 echo ${PRIMARY_IP}
@@ -53,6 +56,16 @@ echo ${PRIMARY_PORT}
  MYSYSBENCH="sysbench --mysql-host=${PRIMARY_IP} --mysql-port=${PRIMARY_PORT} --mysql-password=${TEST_PASS} --mysql-user=${TEST_USER} --db-driver=mysql "
 
  echo $MYSYSBENCH
+LUA=oltp_read_write
+ TNOW=`date +%Y%m%d_%H:%M:%S`
+ WRFILELOG=${PRE}_wr_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
+ ${MYSYSBENCH} $LUA --threads=$ThreadCount --mysql-db=${MYDB} --tables=${TableCount} --table-size=${TableSize} --events=$EVENTS --time=${TIME} --range_selects=off --db-ps-mode=disable --report-interval=1 run | tee $WRFILELOG
+  RC=$?
+ ETNOW=`date +%Y%m%d_%H:%M:%S`
+ echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
+
+ exit
+
 LUA=oltp_read_only
  TNOW=`date +%Y%m%d_%H:%M:%S`
  ROFILELOG=${PRE}_ro_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
@@ -70,15 +83,7 @@ LUA=oltp_write_only
   RC=$?
  ETNOW=`date +%Y%m%d_%H:%M:%S`
   echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
-LUA=oltp_read_write
- TNOW=`date +%Y%m%d_%H:%M:%S`
- WRFILELOG=${PRE}_wr_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
- ${MYSYSBENCH} $LUA --threads=$ThreadCount --mysql-db=${MYDB} --tables=${TableCount} --table-size=${TableSize} --events=$EVENTS --time=${TIME} --range_selects=off --db-ps-mode=disable --report-interval=1 run | tee $WRFILELOG
-  RC=$?
- ETNOW=`date +%Y%m%d_%H:%M:%S`
- echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
 
-
- done
 exit
+ done
 done
