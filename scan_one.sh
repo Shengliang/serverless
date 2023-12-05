@@ -64,6 +64,7 @@ LUA=oltp_read_write
  ETNOW=`date +%Y%m%d_%H:%M:%S`
  echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
 
+ exit
 LUA=oltp_read_only
  TNOW=`date +%Y%m%d_%H:%M:%S`
  ROFILELOG=${PRE}_ro_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
