@@ -2,7 +2,7 @@
 
 TableCount=128
 EVENTS=0
-TIME=600
+TIME=300
 LUA=otp_read_only
 LUA=oltp_write_only
 LUA=oltp_insert
