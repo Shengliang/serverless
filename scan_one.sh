@@ -2,7 +2,7 @@
 
 TableCount=256
 EVENTS=0
-TIME=20
+TIME=600
 LUA=otp_read_only
 LUA=oltp_write_only
 LUA=oltp_insert
@@ -12,7 +12,7 @@ LUA=oltp_read_write
 MYDBArr=(sbtest1Mx256)
 
 TableSize=1000000
-TableSizeArr=(1000000)
+TableSizeArr=($TableSize)
 
 source key.sh
 
@@ -47,6 +47,8 @@ x=0; while  [ $x -le 8 ]; do
   dbid=${MYDB}
   ThreadCount=${ThreadArr[$x]}
   TableCount=${ThreadArr[$x]}
+  ThreadCount=256
+  TableCount=256
    ((x=x+1))
 
 echo ${PRIMARY_IP}
@@ -54,14 +56,6 @@ echo ${PRIMARY_PORT}
  MYSYSBENCH="sysbench --mysql-host=${PRIMARY_IP} --mysql-port=${PRIMARY_PORT} --mysql-password=${TEST_PASS} --mysql-user=${TEST_USER} --db-driver=mysql "
 
  echo $MYSYSBENCH
-LUA=oltp_write_only
- TNOW=`date +%Y%m%d_%H:%M:%S`
- WOFILELOG=${PRE}_wo_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
-   ${MYSYSBENCH} $LUA --threads=$ThreadCount --mysql-db=${MYDB} --tables=${TableCount} --table-size=${TableSize} --events=$EVENTS --time=${TIME} --range_selects=off --db-ps-mode=disable --report-interval=1 run | tee $WOFILELOG
-  RC=$?
- ETNOW=`date +%Y%m%d_%H:%M:%S`
-  echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
-
 LUA=oltp_read_write
  TNOW=`date +%Y%m%d_%H:%M:%S`
  WRFILELOG=${PRE}_wr_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
@@ -69,7 +63,6 @@ LUA=oltp_read_write
   RC=$?
  ETNOW=`date +%Y%m%d_%H:%M:%S`
  echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
-
 
 LUA=oltp_read_only
  TNOW=`date +%Y%m%d_%H:%M:%S`
@@ -81,6 +74,15 @@ LUA=oltp_read_only
  echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
 
 
+LUA=oltp_write_only
+ TNOW=`date +%Y%m%d_%H:%M:%S`
+ WOFILELOG=${PRE}_wo_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
+   ${MYSYSBENCH} $LUA --threads=$ThreadCount --mysql-db=${MYDB} --tables=${TableCount} --table-size=${TableSize} --events=$EVENTS --time=${TIME} --range_selects=off --db-ps-mode=disable --report-interval=1 run | tee $WOFILELOG
+  RC=$?
+ ETNOW=`date +%Y%m%d_%H:%M:%S`
+  echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
+
+exit
  done
  exit
 done
