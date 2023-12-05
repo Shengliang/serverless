@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TableCount=256
+TableCount=128
 EVENTS=0
 TIME=600
 LUA=otp_read_only
@@ -40,15 +40,14 @@ PRE="r$$"
 y=0; while  [ $y -le 20 ]; do
 c=0
    ((y=y+1))
-  TableCount=$y
 x=0; while  [ $x -le 8 ]; do
   core=${Cores[0]}
   MYDB=${MYDBArr[0]}
   dbid=${MYDB}
   ThreadCount=${ThreadArr[$x]}
   TableCount=${ThreadArr[$x]}
-  ThreadCount=256
-  TableCount=256
+  ThreadCount=128
+  TableCount=128
    ((x=x+1))
 
 echo ${PRIMARY_IP}
