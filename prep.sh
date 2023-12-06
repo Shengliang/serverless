@@ -5,16 +5,16 @@ echo mysql -h $HOST -p${PASS} -u${USER} -P3306
 mysql -h $HOST -p${PASS} -u${USER} -P3306 -e "show databases"
 
 IP=${HOST}
-CNT=256
+CNT=128
 source $(dirname $0)/config.sh $IP
 
-MYDB=sbtest1Mx256
+MYDB=sbtest1Mx128
 TableSize=1000000
 TableCount=${CNT}
 EVENTS=30
 TIME=30
 ThreadCount=${TableCount}
-ThreadCount=256
+ThreadCount=32
 LUA=oltp_read_write
 
 #run_query "drop database if exists $MYDB"

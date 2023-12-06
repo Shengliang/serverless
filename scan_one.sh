@@ -1,8 +1,8 @@
 #!/bin/bash
 
-TableCount=256
+TableCount=128
 EVENTS=0
-TIME=100
+TIME=300
 LUA=otp_read_only
 LUA=oltp_write_only
 LUA=oltp_insert
@@ -11,6 +11,7 @@ LUA=oltp_read_write
 
 MYDBArr=(sbtest1Kx256)
 MYDBArr=(sbtest25Kx256)
+MYDBArr=(sbtest1Mx256)
 MYDBArr=(sbtest1Mx256)
 
 TableSize=25000
@@ -37,7 +38,7 @@ ThreadArr=(256 128 64 32 16 8 4 2 1)
 ThreadArr=(128 64 32 16 8 4 2 1)
 ThreadArr=(32 16 8 4 2 1)
 ThreadArr=(1 2 4 8 16 32 64 64 128 128 256 512 512)
-TableArr=(1 2 4 8 16 32 64 64 128 128 256 256 256)
+TableArr=(1 2 4 8 16 32 64 64 128 128 128 128 128)
 
 PRE="r$$"
 
@@ -50,6 +51,8 @@ x=0; while  [ $x -le 12 ]; do
   dbid=${MYDB}
   ThreadCount=${ThreadArr[$x]}
   TableCount=${TableArr[$x]}
+  ThreadCount=1000
+  TableCount=128
    ((x=x+1))
 
 echo ${PRIMARY_IP}
@@ -65,6 +68,7 @@ LUA=oltp_read_write
  ETNOW=`date +%Y%m%d_%H:%M:%S`
  echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
 
+ exit
 LUA=oltp_read_only
  TNOW=`date +%Y%m%d_%H:%M:%S`
  ROFILELOG=${PRE}_ro_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
@@ -83,6 +87,6 @@ LUA=oltp_write_only
  ETNOW=`date +%Y%m%d_%H:%M:%S`
   echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
 
- done
  exit
+ done
 done
