@@ -36,15 +36,15 @@ ThreadArr=(512 256 128 64 32 16 8 4 2 1)
 ThreadArr=(256 128 64 32 16 8 4 2 1)
 ThreadArr=(128 64 32 16 8 4 2 1)
 ThreadArr=(32 16 8 4 2 1)
-ThreadArr=(1 2 4 8 16 32 64 128 256 512 512)
-TableArr=(1 2 4 8 16 32 64 128 256 256 256)
+ThreadArr=(1 2 4 8 16 32 64 64 128 128 256 512 512)
+TableArr=(1 2 4 8 16 32 64 64 128 128 256 256 256)
 
 PRE="r$$"
 
 y=0; while  [ $y -le 20 ]; do
 c=0
    ((y=y+1))
-x=0; while  [ $x -le 10 ]; do
+x=0; while  [ $x -le 12 ]; do
   core=${Cores[0]}
   MYDB=${MYDBArr[0]}
   dbid=${MYDB}
@@ -65,7 +65,6 @@ LUA=oltp_read_write
  ETNOW=`date +%Y%m%d_%H:%M:%S`
  echo RCNOW ${TNOW} ${ETNOW}  ===========================  ${RC}
 
- continue 
 LUA=oltp_read_only
  TNOW=`date +%Y%m%d_%H:%M:%S`
  ROFILELOG=${PRE}_ro_${TNOW}_${MYDB}_tableSize_${TableSize}_tableCount_${TableCount}_time_${TIME}_x${x}_threadCount_${ThreadCount}_core_${core}_${dbid}_run.log
