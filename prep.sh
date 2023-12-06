@@ -18,7 +18,7 @@ ThreadCount=256
 LUA=oltp_read_write
 
 #run_query "drop database if exists $MYDB"
-#run_query "create database $MYDB"
+run_query "create database $MYDB"
 run_query "show databases"
 
 ${MYSYSBENCH} $LUA --threads=$ThreadCount --mysql-db=${MYDB} --tables=${TableCount} --table-size=${TableSize} --events=$EVENTS --time=${TIME} prepare
