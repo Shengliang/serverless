@@ -1,0 +1,609 @@
+2023-12-06T16:37:32.719957Z 0 [Warning] [MY-010918] [Server] 'default_authentication_plugin' is deprecated and will be removed in a future release. Please use authentication_policy instead. (sql_authentication.cc:1377)
+2023-12-06T16:37:32.719965Z 0 [Note] [MY-013932] [Server] BuildID[sha1]=18e19f1501dcecd8f25da6fb63816fe9b2f58c37 (mysqld.cc:6061)
+2023-12-06T16:37:32.719972Z 0 [Note] [MY-010949] [Server] Basedir set to /rdsdbbin/oscar-8.0.mysql_aurora.3.05.1.0.42627.0/. (mysqld.cc:6065)
+2023-12-06T16:37:32.719984Z 0 [System] [MY-010116] [Server] /rdsdbbin/oscar/bin/mysqld (mysqld 8.0.32) starting as process 271 (mysqld.cc:6071)
+2023-12-06T16:37:32.725307Z 0 [Warning] [MY-010161] [Server] You need to use --log-bin to make --log-replica-updates work. (mysqld.cc:7422)
+2023-12-06T16:37:32.728746Z 0 [Note] [MY-010747] [Server] Plugin 'FEDERATED' is disabled. (sql_plugin.cc:3638)
+231206 16:37:32 server_audit: Audit STARTED.
+Found DAS config file, trying to load DAS switcher from DAS config file.
+2023-12-06 16:37:32 70369410514624:[DAS][INFO]: Calculated persistence threads 8
+aurora_enable_das:0
+231206 16:37:32 server_audit: server_audit_incl_users set to ''.
+231206 16:37:32 server_audit: server_audit_excl_users set to ''.
+2023-12-06T16:37:32.731377Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started. (ha_innodb.cc:13897)
+2023-12-06T16:37:32.731444Z 1 [Note] [MY-013547] [InnoDB] Atomic write disabled (ha_innodb.cc:13921)
+2023-12-06T16:37:32.731479Z 1 [Note] [MY-012932] [InnoDB] PUNCH HOLE support available (srv0start.cc:1984)
+2023-12-06T16:37:32.731495Z 1 [Note] [MY-012944] [InnoDB] Uses event mutexes (srv0start.cc:2029)
+2023-12-06T16:37:32.731505Z 1 [Note] [MY-012945] [InnoDB] GCC builtin __atomic_thread_fence() is used for memory barrier (srv0start.cc:2030)
+2023-12-06T16:37:32.731529Z 1 [Note] [MY-012948] [InnoDB] Compressed tables use zlib 1.2.13 (srv0start.cc:2048)
+2023-12-06T16:37:32.734075Z 1 [Note] [MY-012951] [InnoDB] Using hardware accelerated crc32 and polynomial multiplication. (srv0start.cc:2080)
+2023-12-06T16:37:32.734539Z 1 [Note] [MY-012203] [InnoDB] Directories to scan './' (srv0start.cc:2118)
+2023-12-06T16:37:32.735728Z 1 [Note] [MY-012955] [InnoDB] Initializing buffer pool, total size = 256.000000M, instances = 8, chunk size =128.000000M  (srv0start.cc:2214)
+ (buf0buf.cc:1721)
+2023-12-06 16:37:32.738 70369804288992 (buf0buf.cc:1721)
+2023-12-06T16:37:34.378957Z 1 [Note] [MY-012957] [InnoDB] Completed initialization of buffer pool (srv0start.cc:2523)
+2023-12-06T16:37:34.462316Z 1 [Note] [MY-013252] [InnoDB] Using undo tablespace './undo_001'. (srv0start.cc:936)
+2023-12-06T16:37:34.464093Z 1 [Note] [MY-013252] [InnoDB] Using undo tablespace './undo_002'. (srv0start.cc:936)
+2023-12-06T16:37:34.465895Z 1 [Note] [MY-012910] [InnoDB] Opened 2 existing undo tablespaces. (srv0start.cc:998)
+2023-12-06 16:37:34.465 70369780192224 [PROGRESS_INDICATOR IN OSCAR_RSEG_INIT]     1 th PAGE_READ
+2023-12-06T16:37:34.465979Z 1 [Note] [MY-011980] [InnoDB] GTID recovery trx_no: 28516879 (clone0repl.h:140)
+2023-12-06T16:37:34.667097Z 1 [Note] [MY-013776] [InnoDB] Parallel initialization of rseg complete (trx0rseg.cc:639)
+2023-12-06T16:37:34.667158Z 1 [Note] [MY-013777] [InnoDB] Time taken to initialize rseg using 2 thread: 201198 ms. (trx0sys.cc:573)
+2023-12-06T16:37:34.667317Z 1 [Note] [MY-012255] [InnoDB] Removed temporary tablespace data file: "ibtmp1" (fsp0space.cc:112)
+2023-12-06T16:37:34.667332Z 1 [Note] [MY-012923] [InnoDB] Creating shared tablespace for temporary tables (srv0start.cc:1597)
+2023-12-06T16:37:34.670447Z 1 [Note] [MY-012265] [InnoDB] Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ... (fsp0sysspace.cc:393)
+2023-12-06T16:37:34.671837Z 1 [Note] [MY-012266] [InnoDB] File './ibtmp1' size is now 12 MB. (fsp0sysspace.cc:404)
+2023-12-06T16:37:34.710834Z 1 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in the temporary tablespace. 128 are now active. (trx0rseg.cc:987)
+2023-12-06T16:37:34.723747Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended. (ha_innodb.cc:14034)
+2023-12-06T16:37:34.755024Z 1 [Note] [MY-011089] [Server] Data dictionary restarting version '80023'. (bootstrapper.cc:1222)
+2023-12-06T16:37:35.109375Z 1 [Note] [MY-012357] [InnoDB] Reading DD tablespace files (ha_innodb.cc:4392)
+2023-12-06T16:37:35.171695Z 1 [Note] [MY-010006] [Server] Using data dictionary with version '80023'. (bootstrapper.cc:977)
+2023-12-06T16:37:35.244495Z 0 [Note] [MY-010902] [Server] Thread priority attribute setting in Resource Group SQL shall be ignored due to unsupported platform or insufficient privilege. (resource_group_mgr.cc:303)
+2023-12-06T16:37:35.267113Z 0 [Note] [MY-013911] [Server] Crash recovery finished in InnoDB engine. No attempts to commit, rollback or prepare any transactions. (recovery.cc:234)
+2023-12-06T16:37:35.270307Z 0 [Note] [MY-012487] [InnoDB] DDL log recovery : begin (log0ddl.cc:1954)
+2023-12-06T16:37:35.272111Z 0 [Note] [MY-012488] [InnoDB] DDL log recovery : end (log0ddl.cc:1964)
+2023-12-06T16:37:35.315484Z 0 [Note] [MY-010303] [Server] Skipping generation of SSL certificates as options related to SSL are specified. (sql_authentication.cc:5845)
+2023-12-06T16:37:35.318013Z 0 [Warning] [MY-013414] [Server] Server SSL certificate doesn't verify: unable to get issuer certificate (ssl_acceptor_context_data.cc:162)
+2023-12-06T16:37:35.318146Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel. (ssl_acceptor_context_operator.cc:88)
+2023-12-06T16:37:35.318195Z 0 [Note] [MY-010308] [Server] Skipping generation of RSA key pair through --sha256_password_auto_generate_rsa_keys as key files are present in data directory. (sql_authentication.cc:5936)
+2023-12-06T16:37:35.318207Z 0 [Note] [MY-010308] [Server] Skipping generation of RSA key pair through --caching_sha2_password_auto_generate_rsa_keys as key files are present in data directory. (sql_authentication.cc:5936)
+2023-12-06T16:37:35.319562Z 0 [Note] [MY-010252] [Server] Server hostname (bind-address): '*'; port: 3306 (socket_connection.cc:383)
+2023-12-06T16:37:35.319614Z 0 [Note] [MY-010253] [Server] IPv6 is available. (socket_connection.cc:434)
+2023-12-06T16:37:35.319629Z 0 [Note] [MY-010264] [Server]   - '::' resolves to '::'; (socket_connection.cc:497)
+2023-12-06T16:37:35.319772Z 0 [Note] [MY-010251] [Server] Server socket created on IP: '::'. (socket_connection.cc:345)
+2023-12-06T16:37:35.329315Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose_authentication_kerberos_service_key_tab=/rdsdbdata/activedirectory/keytab'.
+2023-12-06T16:37:35.329347Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose_authentication_kerberos_caseins_cmp=0'.
+2023-12-06T16:37:35.329355Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose_authentication_kerberos_service_principal=mysql/serverless-database-mysqld-1-instance-1.c2cfpldybvpw.us-east-2.rds.amazonaws.com'.
+2023-12-06T16:37:35.329364Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose_aurora_fast_restart_enable=1'.
+2023-12-06T16:37:35.329372Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose_aurora_fast_restart_caspian_enable=1'.
+2023-12-06T16:37:35.329380Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose_innodb_trx_commit_allow_data_loss=0'.
+2023-12-06T16:37:35.329388Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose_eit_enabled=1'.
+2023-12-06T16:37:35.329398Z 0 [Warning] [MY-000067] [Server] unknown variable 'loose_rpc_v2_enabled=1'.
+2023-12-06T16:37:35.430434Z 5 [Note] [MY-010051] [Server] Event Scheduler: scheduler thread started with id 5 (event_scheduler.cc:564)
+2023-12-06T16:37:35.430840Z 0 [System] [MY-010931] [Server] /rdsdbbin/oscar/bin/mysqld: ready for connections. Version: '8.0.32'  socket: '/tmp/mysql.sock'  port: 3306  Source distribution.
+2023-12-06T16:40:39.989340Z 11 [Note] [MY-010914] [Server] Aborted connection 11 to db: 'unconnected' user: 'rdsadmin' host: 'localhost' (Got timeout reading communication packets). (sql_connect.cc:828)
+Allocated: 434794264, active: 449765376, metadata: 6141056 (n_thp 0), resident: 466190336, mapped: 484777984, retained: 106618880
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                  33       0               0       0               0       0              11       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                                17       0               0       0               0       0               3       0               0         0               0           0
+prof                                9       0               0       0               0       0               3       0               0         0               0           0
+prof_thds_data                      9       0               0       0               0       0               3       0               0         0               0           0
+prof_dump                           9       0               0       0               0       0               3       0               0         0               0           0
+prof_recent_alloc                   9       0               0       0               0       0               3       0               0         0               0           0
+prof_recent_dump                    9       0               0       0               0       0               3       0               0         0               0           0
+prof_stats                          9       0               0       0               0       0               3       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:44:30.565086Z 0 [Note] [MY-013954] [InnoDB] Status code 1: Resizing buffer pool from 268435456 to 671088640 (unit=[variable size]). (buf0buf.cc:2679)
+2023-12-06T16:44:30.565110Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565120Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565130Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565139Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565148Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565157Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565165Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565173Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565183Z 0 [Note] [MY-013952] [InnoDB] Status code 1: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:30.565192Z 0 [Note] [MY-013954] [InnoDB] Status code 2: Disabling adaptive hash index. (buf0buf.cc:2679)
+2023-12-06T16:44:30.565201Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565210Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565219Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565228Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565237Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565246Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565255Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565264Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565274Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565283Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565292Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565301Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565310Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565319Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565328Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565336Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.565345Z 0 [Note] [MY-013952] [InnoDB] Status code 2: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:30.565354Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:44:30.568353Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:44:30.568376Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 14% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.568386Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 28% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.568411Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 42% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.568422Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 57% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.568431Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 71% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.568442Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 85% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.568452Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.568466Z 0 [Note] [MY-013952] [InnoDB] Status code 4: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:30.568480Z 0 [Note] [MY-013954] [InnoDB] Status code 5: Starting pool resize (buf0buf.cc:2679)
+2023-12-06T16:44:30.568489Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 0 : resizing with chunks 2 to 3. (buf0buf.cc:2679)
+2023-12-06T16:44:30.568649Z 0 [Note] [MY-011891] [InnoDB] buffer pool 0 : 1 chunks (3120 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:30.568664Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.568674Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 1 : resizing with chunks 2 to 3. (buf0buf.cc:2679)
+2023-12-06T16:44:30.568817Z 0 [Note] [MY-011891] [InnoDB] buffer pool 1 : 1 chunks (3120 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:30.568832Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.568842Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 2 : resizing with chunks 2 to 3. (buf0buf.cc:2679)
+2023-12-06T16:44:30.568977Z 0 [Note] [MY-011891] [InnoDB] buffer pool 2 : 1 chunks (3120 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:30.568991Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.569001Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 3 : resizing with chunks 2 to 3. (buf0buf.cc:2679)
+2023-12-06T16:44:30.569136Z 0 [Note] [MY-011891] [InnoDB] buffer pool 3 : 1 chunks (3120 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:30.569150Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.569159Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 4 : resizing with chunks 2 to 3. (buf0buf.cc:2679)
+2023-12-06T16:44:30.569294Z 0 [Note] [MY-011891] [InnoDB] buffer pool 4 : 1 chunks (3120 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:30.569308Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.569318Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 5 : resizing with chunks 2 to 3. (buf0buf.cc:2679)
+2023-12-06T16:44:30.569448Z 0 [Note] [MY-011891] [InnoDB] buffer pool 5 : 1 chunks (3120 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:30.569461Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.569471Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 6 : resizing with chunks 2 to 3. (buf0buf.cc:2679)
+2023-12-06T16:44:30.569605Z 0 [Note] [MY-011891] [InnoDB] buffer pool 6 : 1 chunks (3120 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:30.569618Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.569626Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 7 : resizing with chunks 2 to 3. (buf0buf.cc:2679)
+2023-12-06T16:44:30.569754Z 0 [Note] [MY-011891] [InnoDB] buffer pool 7 : 1 chunks (3120 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:30.569768Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.569779Z 0 [Note] [MY-013952] [InnoDB] Status code 5: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:30.569788Z 0 [Note] [MY-013954] [InnoDB] Status code 6: Resizing hash tables. (buf0buf.cc:2679)
+2023-12-06T16:44:30.570420Z 0 [Note] [MY-011892] [InnoDB] buffer pool 0 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:30.570440Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.570867Z 0 [Note] [MY-011892] [InnoDB] buffer pool 1 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:30.570880Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.571404Z 0 [Note] [MY-011892] [InnoDB] buffer pool 2 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:30.571418Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.571909Z 0 [Note] [MY-011892] [InnoDB] buffer pool 3 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:30.571921Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.572362Z 0 [Note] [MY-011892] [InnoDB] buffer pool 4 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:30.572375Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.572796Z 0 [Note] [MY-011892] [InnoDB] buffer pool 5 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:30.572807Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.573249Z 0 [Note] [MY-011892] [InnoDB] buffer pool 6 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:30.573264Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.573784Z 0 [Note] [MY-011892] [InnoDB] buffer pool 7 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:30.573797Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:30.573807Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Un-latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:44:30.573825Z 0 [Note] [MY-013954] [InnoDB] Status code 6: Resizing also other hash tables. (buf0buf.cc:2679)
+2023-12-06T16:44:30.576861Z 0 [Note] [MY-011893] [InnoDB] Resized hash tables at lock_sys, adaptive hash index, dictionary. (buf0buf.cc:4095)
+2023-12-06T16:44:30.576905Z 0 [Note] [MY-011894] [InnoDB] Completed to resize buffer pool from 268435456 to 671088640. (buf0buf.cc:4119)
+2023-12-06T16:44:30.576921Z 0 [Note] [MY-013952] [InnoDB] Status code 6: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:30.576932Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Completed resizing buffer pool at 231206 16:44:30. (buf0buf.cc:2679)
+2023-12-06T16:44:30.576942Z 0 [Note] [MY-013953] [InnoDB] Status code 0: 100% complete (buf0buf.cc:2765)
+Allocated: 437103752, active: 452083712, metadata: 8239448 (n_thp 0), resident: 471760896, mapped: 494534656, retained: 106823680
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                  39       0               0       0               0       0              11       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                               121       0               0       0               0       0               3       0               0         0               0           0
+prof                               12       0               0       0               0       0               3       0               0         0               0           0
+prof_thds_data                     12       0               0       0               0       0               3       0               0         0               0           0
+prof_dump                          12       0               0       0               0       0               3       0               0         0               0           0
+prof_recent_alloc                  12       0               0       0               0       0               3       0               0         0               0           0
+prof_recent_dump                   12       0               0       0               0       0               3       0               0         0               0           0
+prof_stats                         12       0               0       0               0       0               3       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:44:33.635861Z 0 [Note] [MY-013954] [InnoDB] Status code 1: Resizing buffer pool from 671088640 to 1610612736 (unit=[variable size]). (buf0buf.cc:2679)
+2023-12-06T16:44:33.635884Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.635894Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.635903Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.635912Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.635936Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.635948Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.635957Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.635966Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.635976Z 0 [Note] [MY-013952] [InnoDB] Status code 1: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:33.635985Z 0 [Note] [MY-013954] [InnoDB] Status code 2: Disabling adaptive hash index. (buf0buf.cc:2679)
+2023-12-06T16:44:33.635995Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636003Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636011Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636027Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636037Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636046Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636054Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636063Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636073Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636084Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636092Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636101Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636109Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636117Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636136Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636148Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.636157Z 0 [Note] [MY-013952] [InnoDB] Status code 2: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:33.636166Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:44:33.639327Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:44:33.639350Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 14% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.639361Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 28% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.639382Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 42% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.639395Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 57% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.639407Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 71% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.639417Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 85% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.639427Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.639442Z 0 [Note] [MY-013952] [InnoDB] Status code 4: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:33.639453Z 0 [Note] [MY-013954] [InnoDB] Status code 5: Starting pool resize (buf0buf.cc:2679)
+2023-12-06T16:44:33.639462Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 0 : resizing with chunks 3 to 4. (buf0buf.cc:2679)
+2023-12-06T16:44:33.640001Z 0 [Note] [MY-011891] [InnoDB] buffer pool 0 : 1 chunks (7240 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:33.640029Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.640039Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 1 : resizing with chunks 3 to 4. (buf0buf.cc:2679)
+2023-12-06T16:44:33.640584Z 0 [Note] [MY-011891] [InnoDB] buffer pool 1 : 1 chunks (7240 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:33.640608Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.640617Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 2 : resizing with chunks 3 to 4. (buf0buf.cc:2679)
+2023-12-06T16:44:33.641151Z 0 [Note] [MY-011891] [InnoDB] buffer pool 2 : 1 chunks (7240 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:33.641173Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.641186Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 3 : resizing with chunks 3 to 4. (buf0buf.cc:2679)
+2023-12-06T16:44:33.641722Z 0 [Note] [MY-011891] [InnoDB] buffer pool 3 : 1 chunks (7240 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:33.641742Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.641751Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 4 : resizing with chunks 3 to 4. (buf0buf.cc:2679)
+2023-12-06T16:44:33.642292Z 0 [Note] [MY-011891] [InnoDB] buffer pool 4 : 1 chunks (7240 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:33.642320Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.642329Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 5 : resizing with chunks 3 to 4. (buf0buf.cc:2679)
+2023-12-06T16:44:33.642864Z 0 [Note] [MY-011891] [InnoDB] buffer pool 5 : 1 chunks (7240 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:33.642886Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.642896Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 6 : resizing with chunks 3 to 4. (buf0buf.cc:2679)
+2023-12-06T16:44:33.643458Z 0 [Note] [MY-011891] [InnoDB] buffer pool 6 : 1 chunks (7240 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:33.643482Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.643504Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 7 : resizing with chunks 3 to 4. (buf0buf.cc:2679)
+2023-12-06T16:44:33.644045Z 0 [Note] [MY-011891] [InnoDB] buffer pool 7 : 1 chunks (7240 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:44:33.644065Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.644075Z 0 [Note] [MY-013952] [InnoDB] Status code 5: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:33.644084Z 0 [Note] [MY-013954] [InnoDB] Status code 6: Resizing hash tables. (buf0buf.cc:2679)
+2023-12-06T16:44:33.644882Z 0 [Note] [MY-011892] [InnoDB] buffer pool 0 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:33.644896Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.645466Z 0 [Note] [MY-011892] [InnoDB] buffer pool 1 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:33.645479Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.646153Z 0 [Note] [MY-011892] [InnoDB] buffer pool 2 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:33.646165Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.646766Z 0 [Note] [MY-011892] [InnoDB] buffer pool 3 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:33.646778Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.647456Z 0 [Note] [MY-011892] [InnoDB] buffer pool 4 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:33.647479Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.648075Z 0 [Note] [MY-011892] [InnoDB] buffer pool 5 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:33.648087Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.648701Z 0 [Note] [MY-011892] [InnoDB] buffer pool 6 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:33.648714Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.649398Z 0 [Note] [MY-011892] [InnoDB] buffer pool 7 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:44:33.649410Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:44:33.649419Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Un-latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:44:33.649459Z 0 [Note] [MY-013954] [InnoDB] Status code 6: Resizing also other hash tables. (buf0buf.cc:2679)
+2023-12-06T16:44:33.656994Z 0 [Note] [MY-011893] [InnoDB] Resized hash tables at lock_sys, adaptive hash index, dictionary. (buf0buf.cc:4095)
+2023-12-06T16:44:33.657025Z 0 [Note] [MY-011894] [InnoDB] Completed to resize buffer pool from 671088640 to 1610612736. (buf0buf.cc:4119)
+2023-12-06T16:44:33.657040Z 0 [Note] [MY-013952] [InnoDB] Status code 6: Completed (buf0buf.cc:2751)
+2023-12-06T16:44:33.657051Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Completed resizing buffer pool at 231206 16:44:33. (buf0buf.cc:2679)
+2023-12-06T16:44:33.657064Z 0 [Note] [MY-013953] [InnoDB] Status code 0: 100% complete (buf0buf.cc:2765)
+Allocated: 441194672, active: 456802304, metadata: 8244056 (n_thp 0), resident: 480280576, mapped: 503054336, retained: 107741184
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                  45       0               0       0               0       0              11       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                               225       0               0       0               0       0               3       0               0         0               0           0
+prof                               15       0               0       0               0       0               3       0               0         0               0           0
+prof_thds_data                     15       0               0       0               0       0               3       0               0         0               0           0
+prof_dump                          15       0               0       0               0       0               3       0               0         0               0           0
+prof_recent_alloc                  15       0               0       0               0       0               3       0               0         0               0           0
+prof_recent_dump                   15       0               0       0               0       0               3       0               0         0               0           0
+prof_stats                         15       0               0       0               0       0               3       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:44:36.491975Z 0 [Note] [MY-013954] [InnoDB] Status code 0: No size change: 1610612736. Nothing to do. (buf0buf.cc:2679)
+Allocated: 442604256, active: 459120640, metadata: 8302936 (n_thp 0), resident: 472621056, mapped: 495370240, retained: 226574336
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                  59       0               0       0               0       0              13       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                               337       0               0       0               0       0               5       0               0         0               0           0
+prof                               22       0               0       0               0       0               5       0               0         0               0           0
+prof_thds_data                     22       0               0       0               0       0               5       0               0         0               0           0
+prof_dump                          22       0               0       0               0       0               5       0               0         0               0           0
+prof_recent_alloc                  22       0               0       0               0       0               5       0               0         0               0           0
+prof_recent_dump                   22       0               0       0               0       0               5       0               0         0               0           0
+prof_stats                         22       0               0       0               0       0               5       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:47:52.485423Z 0 [Note] [MY-013954] [InnoDB] Status code 0: No size change: 1610612736. Nothing to do. (buf0buf.cc:2679)
+Allocated: 445968992, active: 462438400, metadata: 8405848 (n_thp 0), resident: 486924288, mapped: 509640704, retained: 212303872
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                  75       0               0       0               0       0              15       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                               451       0               0       0               0       0               7       0               0         0               0           0
+prof                               30       0               0       0               0       0               7       0               0         0               0           0
+prof_thds_data                     30       0               0       0               0       0               7       0               0         0               0           0
+prof_dump                          30       0               0       0               0       0               7       0               0         0               0           0
+prof_recent_alloc                  30       0               0       0               0       0               7       0               0         0               0           0
+prof_recent_dump                   30       0               0       0               0       0               7       0               0         0               0           0
+prof_stats                         30       0               0       0               0       0               7       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:52:50.523456Z 0 [Note] [MY-013954] [InnoDB] Status code 1: Resizing buffer pool from 1610612736 to 2415919104 (unit=[variable size]). (buf0buf.cc:2679)
+2023-12-06T16:52:50.523488Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523500Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523510Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523519Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523529Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523540Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523548Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523557Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523566Z 0 [Note] [MY-013952] [InnoDB] Status code 1: Completed (buf0buf.cc:2751)
+2023-12-06T16:52:50.523576Z 0 [Note] [MY-013954] [InnoDB] Status code 2: Disabling adaptive hash index. (buf0buf.cc:2679)
+2023-12-06T16:52:50.523588Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523596Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523604Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523613Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523625Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523634Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523642Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523650Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523659Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523683Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523696Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523705Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523713Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523722Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523742Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523750Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.523762Z 0 [Note] [MY-013952] [InnoDB] Status code 2: Completed (buf0buf.cc:2751)
+2023-12-06T16:52:50.523771Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:52:50.526418Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:52:50.526442Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 14% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.526454Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 28% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.526478Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 42% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.526489Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 57% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.526499Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 71% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.526510Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 85% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.526519Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.526536Z 0 [Note] [MY-013952] [InnoDB] Status code 4: Completed (buf0buf.cc:2751)
+2023-12-06T16:52:50.526545Z 0 [Note] [MY-013954] [InnoDB] Status code 5: Starting pool resize (buf0buf.cc:2679)
+2023-12-06T16:52:50.526556Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 0 : resizing with chunks 4 to 5. (buf0buf.cc:2679)
+2023-12-06T16:52:50.527073Z 0 [Note] [MY-011891] [InnoDB] buffer pool 0 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:52:50.527101Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.527111Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 1 : resizing with chunks 4 to 5. (buf0buf.cc:2679)
+2023-12-06T16:52:50.527594Z 0 [Note] [MY-011891] [InnoDB] buffer pool 1 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:52:50.527623Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.527633Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 2 : resizing with chunks 4 to 5. (buf0buf.cc:2679)
+2023-12-06T16:52:50.528132Z 0 [Note] [MY-011891] [InnoDB] buffer pool 2 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:52:50.528155Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.528165Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 3 : resizing with chunks 4 to 5. (buf0buf.cc:2679)
+2023-12-06T16:52:50.528684Z 0 [Note] [MY-011891] [InnoDB] buffer pool 3 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:52:50.528707Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.528717Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 4 : resizing with chunks 4 to 5. (buf0buf.cc:2679)
+2023-12-06T16:52:50.529190Z 0 [Note] [MY-011891] [InnoDB] buffer pool 4 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:52:50.529212Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.529223Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 5 : resizing with chunks 4 to 5. (buf0buf.cc:2679)
+2023-12-06T16:52:50.529698Z 0 [Note] [MY-011891] [InnoDB] buffer pool 5 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:52:50.529721Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.529731Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 6 : resizing with chunks 4 to 5. (buf0buf.cc:2679)
+2023-12-06T16:52:50.530207Z 0 [Note] [MY-011891] [InnoDB] buffer pool 6 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:52:50.530231Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.530241Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 7 : resizing with chunks 4 to 5. (buf0buf.cc:2679)
+2023-12-06T16:52:50.530717Z 0 [Note] [MY-011891] [InnoDB] buffer pool 7 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:52:50.530739Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:52:50.530751Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Un-latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:52:50.530795Z 0 [Note] [MY-011894] [InnoDB] Completed to resize buffer pool from 1610612736 to 2415919104. (buf0buf.cc:4119)
+2023-12-06T16:52:50.530815Z 0 [Note] [MY-013952] [InnoDB] Status code 0: Completed (buf0buf.cc:2751)
+2023-12-06T16:52:50.530826Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Completed resizing buffer pool at 231206 16:52:50. (buf0buf.cc:2679)
+2023-12-06T16:52:50.530843Z 0 [Note] [MY-013953] [InnoDB] Status code 0: 100% complete (buf0buf.cc:2765)
+Allocated: 449161104, active: 465608704, metadata: 8465240 (n_thp 0), resident: 476430336, mapped: 499122176, retained: 222822400
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                  83       0               0       0               0       0              17       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                               557       0               0       0               0       0               9       0               0         0               0           0
+prof                               34       0               0       0               0       0               9       0               0         0               0           0
+prof_thds_data                     34       0               0       0               0       0               9       0               0         0               0           0
+prof_dump                          34       0               0       0               0       0               9       0               0         0               0           0
+prof_recent_alloc                  34       0               0       0               0       0               9       0               0         0               0           0
+prof_recent_dump                   34       0               0       0               0       0               9       0               0         0               0           0
+prof_stats                         34       0               0       0               0       0               9       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:54:30.491595Z 0 [Note] [MY-013954] [InnoDB] Status code 0: No size change: 2415919104. Nothing to do. (buf0buf.cc:2679)
+Allocated: 454263584, active: 470736896, metadata: 8537432 (n_thp 0), resident: 479838208, mapped: 502497280, retained: 222593024
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                  95       0               0       0               0       0              19       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                               667       0               0       0               0       0              11       0               0         0               0           0
+prof                               40       0               0       0               0       0              11       0               0         0               0           0
+prof_thds_data                     40       0               0       0               0       0              11       0               0         0               0           0
+prof_dump                          40       0               0       0               0       0              11       0               0         0               0           0
+prof_recent_alloc                  40       0               0       0               0       0              11       0               0         0               0           0
+prof_recent_dump                   40       0               0       0               0       0              11       0               0         0               0           0
+prof_stats                         40       0               0       0               0       0              11       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:57:50.512553Z 0 [Note] [MY-013954] [InnoDB] Status code 1: Resizing buffer pool from 2415919104 to 3221225472 (unit=[variable size]). (buf0buf.cc:2679)
+2023-12-06T16:57:50.512577Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512590Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512600Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512609Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512619Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512627Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512636Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512645Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512654Z 0 [Note] [MY-013952] [InnoDB] Status code 1: Completed (buf0buf.cc:2751)
+2023-12-06T16:57:50.512663Z 0 [Note] [MY-013954] [InnoDB] Status code 2: Disabling adaptive hash index. (buf0buf.cc:2679)
+2023-12-06T16:57:50.512672Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512682Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512691Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512699Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512708Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512716Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512725Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512733Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512742Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512750Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512759Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512768Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512776Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512784Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512793Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512801Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.512810Z 0 [Note] [MY-013952] [InnoDB] Status code 2: Completed (buf0buf.cc:2751)
+2023-12-06T16:57:50.512820Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:57:50.515719Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:57:50.515767Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 14% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.515779Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 28% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.515804Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 42% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.515816Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 57% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.515825Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 71% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.515859Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 85% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.515868Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.515884Z 0 [Note] [MY-013952] [InnoDB] Status code 4: Completed (buf0buf.cc:2751)
+2023-12-06T16:57:50.515894Z 0 [Note] [MY-013954] [InnoDB] Status code 5: Starting pool resize (buf0buf.cc:2679)
+2023-12-06T16:57:50.515903Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 0 : resizing with chunks 5 to 6. (buf0buf.cc:2679)
+2023-12-06T16:57:50.516463Z 0 [Note] [MY-011891] [InnoDB] buffer pool 0 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:57:50.516488Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.516505Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 1 : resizing with chunks 5 to 6. (buf0buf.cc:2679)
+2023-12-06T16:57:50.517070Z 0 [Note] [MY-011891] [InnoDB] buffer pool 1 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:57:50.517094Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.517106Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 2 : resizing with chunks 5 to 6. (buf0buf.cc:2679)
+2023-12-06T16:57:50.517722Z 0 [Note] [MY-011891] [InnoDB] buffer pool 2 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:57:50.517747Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.517757Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 3 : resizing with chunks 5 to 6. (buf0buf.cc:2679)
+2023-12-06T16:57:50.518395Z 0 [Note] [MY-011891] [InnoDB] buffer pool 3 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:57:50.518417Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.518428Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 4 : resizing with chunks 5 to 6. (buf0buf.cc:2679)
+2023-12-06T16:57:50.518945Z 0 [Note] [MY-011891] [InnoDB] buffer pool 4 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:57:50.518968Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.518977Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 5 : resizing with chunks 5 to 6. (buf0buf.cc:2679)
+2023-12-06T16:57:50.519477Z 0 [Note] [MY-011891] [InnoDB] buffer pool 5 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:57:50.519497Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.519507Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 6 : resizing with chunks 5 to 6. (buf0buf.cc:2679)
+2023-12-06T16:57:50.520164Z 0 [Note] [MY-011891] [InnoDB] buffer pool 6 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:57:50.520186Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.520197Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 7 : resizing with chunks 5 to 6. (buf0buf.cc:2679)
+2023-12-06T16:57:50.520716Z 0 [Note] [MY-011891] [InnoDB] buffer pool 7 : 1 chunks (6241 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:57:50.520738Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:57:50.520748Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Un-latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:57:50.520767Z 0 [Note] [MY-011894] [InnoDB] Completed to resize buffer pool from 2415919104 to 3221225472. (buf0buf.cc:4119)
+2023-12-06T16:57:50.520782Z 0 [Note] [MY-013952] [InnoDB] Status code 0: Completed (buf0buf.cc:2751)
+2023-12-06T16:57:50.520791Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Completed resizing buffer pool at 231206 16:57:50. (buf0buf.cc:2679)
+2023-12-06T16:57:50.520801Z 0 [Note] [MY-013953] [InnoDB] Status code 0: 100% complete (buf0buf.cc:2765)
+Allocated: 489889176, active: 507027456, metadata: 10999640 (n_thp 0), resident: 520355840, mapped: 540565504, retained: 217030656
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                 105       0               0       0               0       0              21       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                               775       0               0       0               0       0              13       0               0         0               0           0
+prof                               45       0               0       0               0       0              13       0               0         0               0           0
+prof_thds_data                     45       0               0       0               0       0              13       0               0         0               0           0
+prof_dump                          45       0               0       0               0       0              13       0               0         0               0           0
+prof_recent_alloc                  45       0               0       0               0       0              13       0               0         0               0           0
+prof_recent_dump                   45       0               0       0               0       0              13       0               0         0               0           0
+prof_stats                         45       0               0       0               0       0              13       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:59:30.492725Z 0 [Note] [MY-013954] [InnoDB] Status code 0: No size change: 3221225472. Nothing to do. (buf0buf.cc:2679)
+Allocated: 490658488, active: 507437056, metadata: 11001432 (n_thp 0), resident: 520749056, mapped: 540958720, retained: 216637440
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                 111       0               0       0               0       0              21       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                               879       0               0       0               0       0              13       0               0         0               0           0
+prof                               48       0               0       0               0       0              13       0               0         0               0           0
+prof_thds_data                     48       0               0       0               0       0              13       0               0         0               0           0
+prof_dump                          48       0               0       0               0       0              13       0               0         0               0           0
+prof_recent_alloc                  48       0               0       0               0       0              13       0               0         0               0           0
+prof_recent_dump                   48       0               0       0               0       0              13       0               0         0               0           0
+prof_stats                         48       0               0       0               0       0              13       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:59:33.611994Z 0 [Note] [MY-013954] [InnoDB] Status code 0: No size change: 3221225472. Nothing to do. (buf0buf.cc:2679)
+Allocated: 489903496, active: 506978304, metadata: 11002712 (n_thp 0), resident: 520699904, mapped: 540909568, retained: 216686592
+Count of realloc(non-null-ptr, 0) calls: 0
+Background threads: 0, num_runs: 0, run_interval: 0 ns
+                           n_lock_ops (#/sec)       n_waiting (#/sec)      n_spin_acq (#/sec)  n_owner_switch (#/sec)   total_wait_ns   (#/sec)     max_wait_ns  max_n_thds
+background_thread                 117       0               0       0               0       0              21       0               0         0               0           0
+max_per_bg_thd                      0       0               0       0               0       0               0       0               0         0               0           0
+ctl                               983       0               0       0               0       0              13       0               0         0               0           0
+prof                               51       0               0       0               0       0              13       0               0         0               0           0
+prof_thds_data                     51       0               0       0               0       0              13       0               0         0               0           0
+prof_dump                          51       0               0       0               0       0              13       0               0         0               0           0
+prof_recent_alloc                  51       0               0       0               0       0              13       0               0         0               0           0
+prof_recent_dump                   51       0               0       0               0       0              13       0               0         0               0           0
+prof_stats                         51       0               0       0               0       0              13       0               0         0               0           0
+--- End jemalloc statistics ---(oscar_caspian.cc:1030)
+2023-12-06T16:59:35.514401Z 0 [Note] [MY-013954] [InnoDB] Status code 1: Resizing buffer pool from 3221225472 to 4731174912 (unit=[variable size]). (buf0buf.cc:2679)
+2023-12-06T16:59:35.514426Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514437Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514446Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514465Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514474Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514483Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514492Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514503Z 0 [Note] [MY-013953] [InnoDB] Status code 1: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514513Z 0 [Note] [MY-013952] [InnoDB] Status code 1: Completed (buf0buf.cc:2751)
+2023-12-06T16:59:35.514521Z 0 [Note] [MY-013954] [InnoDB] Status code 2: Disabling adaptive hash index. (buf0buf.cc:2679)
+2023-12-06T16:59:35.514534Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514543Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514552Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514562Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514571Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514579Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514600Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514610Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514620Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514629Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514637Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514646Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514655Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514664Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514672Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514680Z 0 [Note] [MY-013953] [InnoDB] Status code 2: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.514688Z 0 [Note] [MY-013952] [InnoDB] Status code 2: Completed (buf0buf.cc:2751)
+2023-12-06T16:59:35.514697Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:59:35.517880Z 0 [Note] [MY-013954] [InnoDB] Status code 4: Latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:59:35.517905Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 14% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.517916Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 28% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.517956Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 42% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.517969Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 57% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.517980Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 71% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.518003Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 85% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.518016Z 0 [Note] [MY-013953] [InnoDB] Status code 4: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.518035Z 0 [Note] [MY-013952] [InnoDB] Status code 4: Completed (buf0buf.cc:2751)
+2023-12-06T16:59:35.518045Z 0 [Note] [MY-013954] [InnoDB] Status code 5: Starting pool resize (buf0buf.cc:2679)
+2023-12-06T16:59:35.518054Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 0 : resizing with chunks 6 to 7. (buf0buf.cc:2679)
+2023-12-06T16:59:35.519026Z 0 [Note] [MY-011891] [InnoDB] buffer pool 0 : 1 chunks (11609 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:59:35.519055Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.519066Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 1 : resizing with chunks 6 to 7. (buf0buf.cc:2679)
+2023-12-06T16:59:35.519975Z 0 [Note] [MY-011891] [InnoDB] buffer pool 1 : 1 chunks (11609 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:59:35.520003Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.520016Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 2 : resizing with chunks 6 to 7. (buf0buf.cc:2679)
+2023-12-06T16:59:35.520960Z 0 [Note] [MY-011891] [InnoDB] buffer pool 2 : 1 chunks (11609 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:59:35.520987Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.520999Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 3 : resizing with chunks 6 to 7. (buf0buf.cc:2679)
+2023-12-06T16:59:35.521873Z 0 [Note] [MY-011891] [InnoDB] buffer pool 3 : 1 chunks (11609 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:59:35.521900Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.521922Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 4 : resizing with chunks 6 to 7. (buf0buf.cc:2679)
+2023-12-06T16:59:35.523069Z 0 [Note] [MY-011891] [InnoDB] buffer pool 4 : 1 chunks (11609 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:59:35.523097Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.523114Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 5 : resizing with chunks 6 to 7. (buf0buf.cc:2679)
+2023-12-06T16:59:35.524016Z 0 [Note] [MY-011891] [InnoDB] buffer pool 5 : 1 chunks (11609 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:59:35.524050Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.524063Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 6 : resizing with chunks 6 to 7. (buf0buf.cc:2679)
+2023-12-06T16:59:35.524905Z 0 [Note] [MY-011891] [InnoDB] buffer pool 6 : 1 chunks (11609 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:59:35.524928Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.524937Z 0 [Note] [MY-013954] [InnoDB] Status code 5: buffer pool 7 : resizing with chunks 6 to 7. (buf0buf.cc:2679)
+2023-12-06T16:59:35.525811Z 0 [Note] [MY-011891] [InnoDB] buffer pool 7 : 1 chunks (11609 blocks) were added. (buf0buf.cc:3962)
+2023-12-06T16:59:35.525835Z 0 [Note] [MY-013953] [InnoDB] Status code 5: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.525846Z 0 [Note] [MY-013952] [InnoDB] Status code 5: Completed (buf0buf.cc:2751)
+2023-12-06T16:59:35.525855Z 0 [Note] [MY-013954] [InnoDB] Status code 6: Resizing hash tables. (buf0buf.cc:2679)
+2023-12-06T16:59:35.527730Z 0 [Note] [MY-011892] [InnoDB] buffer pool 0 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:59:35.527745Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 12% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.529490Z 0 [Note] [MY-011892] [InnoDB] buffer pool 1 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:59:35.529505Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 25% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.531292Z 0 [Note] [MY-011892] [InnoDB] buffer pool 2 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:59:35.531307Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 37% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.533007Z 0 [Note] [MY-011892] [InnoDB] buffer pool 3 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:59:35.533024Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 50% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.534740Z 0 [Note] [MY-011892] [InnoDB] buffer pool 4 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:59:35.534754Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 62% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.536398Z 0 [Note] [MY-011892] [InnoDB] buffer pool 5 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:59:35.536412Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 75% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.538213Z 0 [Note] [MY-011892] [InnoDB] buffer pool 6 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:59:35.538236Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 87% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.540011Z 0 [Note] [MY-011892] [InnoDB] buffer pool 7 : hash tables were resized. (buf0buf.cc:4040)
+2023-12-06T16:59:35.540025Z 0 [Note] [MY-013953] [InnoDB] Status code 6: 100% complete (buf0buf.cc:2765)
+2023-12-06T16:59:35.540036Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Un-latching whole of buffer pool. (buf0buf.cc:2679)
+2023-12-06T16:59:35.540098Z 0 [Note] [MY-013954] [InnoDB] Status code 6: Resizing also other hash tables. (buf0buf.cc:2679)
+2023-12-06T16:59:35.556770Z 0 [Note] [MY-011893] [InnoDB] Resized hash tables at lock_sys, adaptive hash index, dictionary. (buf0buf.cc:4095)
+2023-12-06T16:59:35.556811Z 0 [Note] [MY-011894] [InnoDB] Completed to resize buffer pool from 3221225472 to 4731174912. (buf0buf.cc:4119)
+2023-12-06T16:59:35.556839Z 0 [Note] [MY-013952] [InnoDB] Status code 6: Completed (buf0buf.cc:2751)
+2023-12-06T16:59:35.556851Z 0 [Note] [MY-013954] [InnoDB] Status code 0: Completed resizing buffer pool at 231206 16:59:35. (buf0buf.cc:2679)
+2023-12-06T16:59:35.556861Z 0 [Note] [MY-013953] [InnoDB] Status code 0: 100% complete (buf0buf.cc:2765)
