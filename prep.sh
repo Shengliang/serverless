@@ -8,9 +8,9 @@ IP=${HOST}
 CNT=128
 source $(dirname $0)/config.sh $IP
 
-MYDB=sbtest1Mx128
-TableSize=1000000
+MYDB=sbtest
 TableSize=1000
+TableSize=1000000
 TableCount=${CNT}
 EVENTS=30
 TIME=30

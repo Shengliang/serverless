@@ -14,10 +14,11 @@ MYDBArr=(sbtest25Kx256)
 MYDBArr=(sbtest1Mx256)
 MYDBArr=(sbtest1Mx256)
 MYDBArr=(sbtest1Mx128)
+MYDBArr=(sbtest)
 
 TableSize=25000
-TableSize=1000000
 TableSize=1000
+TableSize=1000000
 TableSizeArr=($TableSize)
 
 source key.sh
@@ -25,7 +26,7 @@ source key.sh
 export TEST_USER=$USER
 export TEST_PASS=$PASS
 
-Cores=(8)
+Cores=(32)
 IPArr=($HOST)
 IPPort="3306"
 export PRIMARY_IP=$IPArr

@@ -4,3 +4,6 @@ export PASS=serverless123
 export HOST=localhost
 export USER=test
 export PASS=rivos
+export HOST=serverless01.mysql.polardb.rds.aliyuncs.com
+export USER=test_user
+export PASS=Admin@123
