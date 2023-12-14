@@ -13,9 +13,11 @@ MYDBArr=(sbtest1Kx256)
 MYDBArr=(sbtest25Kx256)
 MYDBArr=(sbtest1Mx256)
 MYDBArr=(sbtest1Mx256)
+MYDBArr=(sbtest1Mx128)
 
 TableSize=25000
 TableSize=1000000
+TableSize=1000
 TableSizeArr=($TableSize)
 
 source key.sh
@@ -51,7 +53,7 @@ x=0; while  [ $x -le 12 ]; do
   dbid=${MYDB}
   ThreadCount=${ThreadArr[$x]}
   TableCount=${TableArr[$x]}
-  ThreadCount=1000
+  ThreadCount=128
   TableCount=128
    ((x=x+1))
 
