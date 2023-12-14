@@ -1,3 +1,0 @@
-2023-12-06T01:19:53.538007Z 949 [Note] [MY-010914] [Server] Aborted connection 949 to db: 'unconnected' user: 'rdsadmin' host: 'localhost' (Query execution was interrupted). (sql_connect.cc:828)
-2023-12-06T01:42:02.801609Z 1029 [Note] [MY-010914] [Server] Aborted connection 1029 to db: 'unconnected' user: 'rdsadmin' host: 'localhost' (Query execution was interrupted). (sql_connect.cc:828)
-2023-12-06T01:51:30.845053Z 1086 [Note] [MY-010914] [Server] Aborted connection 1086 to db: 'unconnected' user: 'rdsadmin' host: 'localhost' (Query execution was interrupted). (sql_connect.cc:828)
