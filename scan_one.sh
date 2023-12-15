@@ -2,7 +2,7 @@
 
 TableCount=128
 EVENTS=0
-TIME=300
+TIME=100
 LUA=otp_read_only
 LUA=oltp_write_only
 LUA=oltp_insert
@@ -54,8 +54,11 @@ x=0; while  [ $x -le 12 ]; do
   dbid=${MYDB}
   ThreadCount=${ThreadArr[$x]}
   TableCount=${TableArr[$x]}
+  ThreadCount=256
+  ThreadCount=1000
   ThreadCount=128
   TableCount=128
+  ThreadCount=512
    ((x=x+1))
 
 echo ${PRIMARY_IP}
