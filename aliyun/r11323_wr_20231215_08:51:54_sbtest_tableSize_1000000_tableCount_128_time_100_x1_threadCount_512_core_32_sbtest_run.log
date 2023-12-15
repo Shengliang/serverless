@@ -1,0 +1,523 @@
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 512
+Report intermediate results every 1 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 1s ] thds: 512 tps: 637.91 qps: 14538.24 (r/w/o: 9905.13/2848.15/1784.96) lat (ms,95%): 669.89 err/s: 0.00 reconn/s: 0.00
+[ 2s ] thds: 512 tps: 786.13 qps: 13304.19 (r/w/o: 8348.37/3437.57/1518.25) lat (ms,95%): 995.51 err/s: 0.00 reconn/s: 0.00
+[ 3s ] thds: 512 tps: 994.00 qps: 13604.00 (r/w/o: 8101.00/3467.00/2036.00) lat (ms,95%): 893.56 err/s: 0.00 reconn/s: 0.00
+[ 4s ] thds: 512 tps: 825.01 qps: 13176.11 (r/w/o: 8315.07/3341.03/1520.01) lat (ms,95%): 893.56 err/s: 0.00 reconn/s: 0.00
+[ 5s ] thds: 512 tps: 777.99 qps: 12753.88 (r/w/o: 7893.93/3284.97/1574.99) lat (ms,95%): 419.45 err/s: 0.00 reconn/s: 0.00
+[ 6s ] thds: 512 tps: 777.00 qps: 13117.99 (r/w/o: 8453.99/3028.00/1636.00) lat (ms,95%): 404.61 err/s: 0.00 reconn/s: 0.00
+[ 7s ] thds: 512 tps: 821.01 qps: 12827.08 (r/w/o: 8024.05/3162.02/1641.01) lat (ms,95%): 419.45 err/s: 0.00 reconn/s: 0.00
+[ 8s ] thds: 512 tps: 758.99 qps: 13313.83 (r/w/o: 8392.90/3403.96/1516.98) lat (ms,95%): 419.45 err/s: 0.00 reconn/s: 0.00
+[ 9s ] thds: 512 tps: 1216.01 qps: 17891.19 (r/w/o: 10866.12/4596.05/2429.03) lat (ms,95%): 397.39 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 512 tps: 1260.00 qps: 20588.01 (r/w/o: 13126.00/4943.00/2519.00) lat (ms,95%): 297.92 err/s: 0.00 reconn/s: 0.00
+[ 11s ] thds: 512 tps: 1272.00 qps: 20713.95 (r/w/o: 12993.97/5181.99/2537.99) lat (ms,95%): 297.92 err/s: 0.00 reconn/s: 0.00
+[ 12s ] thds: 512 tps: 1319.02 qps: 20861.25 (r/w/o: 12984.15/5239.06/2638.03) lat (ms,95%): 303.33 err/s: 0.00 reconn/s: 0.00
+[ 13s ] thds: 512 tps: 1298.00 qps: 21122.94 (r/w/o: 13326.96/5207.99/2587.99) lat (ms,95%): 297.92 err/s: 0.00 reconn/s: 0.00
+[ 14s ] thds: 512 tps: 2047.00 qps: 31966.99 (r/w/o: 19690.99/8172.00/4104.00) lat (ms,95%): 253.35 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 512 tps: 2382.00 qps: 37946.03 (r/w/o: 23669.02/9516.01/4761.00) lat (ms,95%): 189.93 err/s: 0.00 reconn/s: 0.00
+[ 16s ] thds: 512 tps: 2319.00 qps: 37480.97 (r/w/o: 23512.98/9328.99/4639.00) lat (ms,95%): 189.93 err/s: 0.00 reconn/s: 0.00
+[ 17s ] thds: 512 tps: 2395.99 qps: 38468.92 (r/w/o: 24097.95/9577.98/4792.99) lat (ms,95%): 189.93 err/s: 0.00 reconn/s: 0.00
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest127 SET c='89039153017-55782070204-60725859011-50857697757-37231851879-04075357212-34715671552-87302342366-50478186066-55433561542' WHERE id=504168'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest50 SET k=k+1 WHERE id=499112'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest125 WHERE id=533170'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest47 WHERE id=499144'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest59 SET k=k+1 WHERE id=499878'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest47 WHERE id=504491'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest78 WHERE id=501377'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest48 WHERE id=501712'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest69 WHERE id=502151'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest89 WHERE id=546421'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest112 WHERE id=402863'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest54 WHERE id=542244'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest84 WHERE id=453348'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'COMMIT'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest97 WHERE id=560572'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest3 WHERE id=501403'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest42 WHERE id=510243'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest37 WHERE id=502358'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest108 WHERE id=500130'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest83 SET k=k+1 WHERE id=504067'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest35 WHERE id=502882'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest71 WHERE id=501594'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest121 WHERE id=727454'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:409: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest1 WHERE id=503502'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'COMMIT'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest28 SET c='94176387542-26947494801-60691791202-97934462040-77136220047-16658466990-78876491424-08568208401-58737006955-97975581921' WHERE id=499545'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest40 WHERE id=498332'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest78 WHERE id=502650'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest128 SET c='03905236998-57859164716-03462913100-18698050786-14792675170-37771530504-15489284789-25229622603-67541043824-43272478843' WHERE id=499962'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest89 WHERE id=502081'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest51 WHERE id=504123'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:409: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 3 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest94 WHERE id=499496'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest100 SET c='41820637265-92946489673-34525263951-36135508743-24653612065-59726680484-92725968992-31359827065-00015855689-83616276173' WHERE id=416190'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest123 WHERE id=501544'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest103 WHERE id=503693'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest94 SET c='06603558952-60430084752-19175854885-95980231389-13551847565-44672235787-10601708767-41712468192-81739344361-63393316211' WHERE id=504438'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest82 WHERE id=599040'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest15 WHERE id=503858'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest80 WHERE id=502994'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest65 SET k=k+1 WHERE id=570183'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest92 WHERE id=436581'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest118 WHERE id=499382'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest72 WHERE id=502869'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest91 SET k=k+1 WHERE id=500824'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest120 WHERE id=499591'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'INSERT INTO sbtest63 (id, k, c, pad) VALUES (502818, 504234, '62690957888-80808799782-83100526226-94992354525-91846632077-67291859730-46282148428-44540601738-54514256443-09934996576', '70796528348-48465648947-14223502371-29103819978-03166669012')'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:488: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest18 WHERE id=501645'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest115 WHERE id=503978'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest104 WHERE id=410306'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest58 WHERE id=574492'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest16 WHERE id=328251'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest5 WHERE id=501729'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest1 WHERE id=502878'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest51 SET c='13554095851-45042887569-76339916519-00942497759-46856280191-30804239256-60106190381-75122747686-65970636895-65871356592' WHERE id=503701'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest117 WHERE id=502907'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest66 WHERE id=573477'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest26 WHERE id=500756'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest18 WHERE id=501489'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest52 WHERE id=503920'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest39 WHERE id=503623'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'DELETE FROM sbtest5 WHERE id=500844'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest32 WHERE id=625071'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:487: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest42 WHERE id=458970'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest93 WHERE id=503944'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest47 WHERE id=503487'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest80 WHERE id=528204'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest58 SET c='53751620175-53815168892-57740153699-17446164956-44712959810-12756158598-51936043255-39787317880-30476507201-83856738282' WHERE id=502848'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest56 WHERE id=499051'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest119 WHERE id=498833'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest92 WHERE id=504439'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest10 WHERE id=504672'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest53 WHERE id=641089'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest12 WHERE id=503069'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest9 WHERE id=511118'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest104 WHERE id=498820'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest67 SET c='21665892241-51062058728-45326602535-13034405563-34107963086-55284288255-46416758903-25629056602-89097457359-43694526865' WHERE id=333246'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest106 WHERE id=425351'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest77 WHERE id=503252'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest69 WHERE id=509774'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest8 WHERE id=500538'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'INSERT INTO sbtest38 (id, k, c, pad) VALUES (536478, 502232, '09874589307-04812638851-04697440135-55860107982-02799402450-94133568257-98621133852-02279538226-09638173521-67892229418', '99894479025-53435602583-61298463583-75830435799-95849707479')'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:488: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest38 WHERE id=503461'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest30 WHERE id=502062'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest69 WHERE id=499499'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest76 WHERE id=504711'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest119 WHERE id=502021'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest3 WHERE id=576344'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest40 WHERE id=499768'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest26 WHERE id=499807'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest84 WHERE id=500701'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest18 WHERE id=503394'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest105 WHERE id=501350'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest97 SET c='68618491294-91163918918-08005049487-92378038321-07813827513-22306993288-88858986413-47458669225-29206692131-25302436498' WHERE id=502283'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest106 WHERE id=498493'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest88 SET k=k+1 WHERE id=501005'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'DELETE FROM sbtest104 WHERE id=437078'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:487: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest122 WHERE id=400632'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest60 WHERE id=500115'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest62 WHERE id=563490'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest117 WHERE id=598655'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest128 WHERE id=503917'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest99 WHERE id=498239'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest91 SET k=k+1 WHERE id=498604'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest78 WHERE id=548273'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest54 WHERE id=499480'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest98 WHERE id=497812'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'COMMIT'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest76 WHERE id=498793'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:409: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest38 WHERE id=500044'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest16 WHERE id=591156'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest69 WHERE id=501275'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest113 WHERE id=503823'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest58 WHERE id=503682'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest103 WHERE id=361466'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest94 WHERE id=469725'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest108 WHERE id=497933'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest10 WHERE id=442509'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest107 WHERE id=499984'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest117 WHERE id=503962'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest60 WHERE id=501844'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest16 WHERE id=499764'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest48 WHERE id=504869'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest92 WHERE id=503258'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest116 SET k=k+1 WHERE id=423492'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest62 WHERE id=568351'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest92 WHERE id=497919'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest125 WHERE id=497826'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest40 SET k=k+1 WHERE id=499285'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest16 WHERE id=504282'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest122 WHERE id=501112'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest9 WHERE id=352992'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest6 WHERE id=615604'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest59 SET c='59227731875-47896658445-85323081028-84951525637-26092987962-60833732818-20076986771-73811594923-80484614305-73399218175' WHERE id=376496'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest23 WHERE id=502818'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest97 WHERE id=501250'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest88 SET c='99156219301-97359220798-64874437597-02227272921-22352074423-26922731999-77206126417-55057293270-89562729963-18202455098' WHERE id=509334'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest102 WHERE id=502740'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest38 WHERE id=500230'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest31 WHERE id=528192'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest91 WHERE id=502803'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest7 WHERE id=501103'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest6 WHERE id=501180'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest53 WHERE id=420986'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest121 SET c='26266107442-06266847375-22080376523-51066446389-10557546117-43396577648-73263839370-20420299371-29114499904-91716247608' WHERE id=502156'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest40 WHERE id=502806'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest118 WHERE id=500604'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest102 WHERE id=497761'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest99 WHERE id=503566'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest48 WHERE id=501240'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest17 WHERE id=503177'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest11 WHERE id=499484'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest49 WHERE id=503556'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest70 WHERE id=547219'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest82 WHERE id=502858'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest40 WHERE id=503103'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest102 SET k=k+1 WHERE id=499617'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest124 WHERE id=499775'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest37 WHERE id=525205'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest44 SET k=k+1 WHERE id=499075'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest109 WHERE id=588537'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'COMMIT'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:409: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest48 WHERE id=503340'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest76 WHERE id=501890'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest94 WHERE id=498834'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest60 WHERE id=499698'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest116 WHERE id=417180'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest25 WHERE id=502350'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest1 WHERE id=497693'
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest112 WHERE id=451647'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest22 SET c='49476477061-21971926364-58563797292-27959873392-31475573788-08453662024-64274106136-31453930244-85594003207-99672487132' WHERE id=497838'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest125 WHERE id=498909'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest98 WHERE id=498263'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest80 WHERE id=503666'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest70 WHERE id=538043'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest110 WHERE id=501686'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest63 WHERE id=499430'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest109 WHERE id=502308'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest77 WHERE id=505432'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest26 WHERE id=500389'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 3 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest12 SET c='23290689328-53484910858-43418783021-70292504758-78480565331-45807253368-21281490466-35105713108-50674995307-13228807353' WHERE id=503374'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest65 WHERE id=504631'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest79 WHERE id=615261'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest100 WHERE id=499278'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest124 WHERE id=500201'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest79 SET c='29668540591-91922036391-37030282713-20034152302-36844909408-84144041684-44210125519-86869468487-18488302477-87746637892' WHERE id=502501'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest34 WHERE id=425221'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest90 WHERE id=585868'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest42 WHERE id=500222'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest114 SET k=k+1 WHERE id=498940'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest21 SET c='59485084085-49476946400-31418881568-53538690336-62368017773-88844415612-82497147400-06511862146-99048737856-49482605077' WHERE id=414679'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest118 SET k=k+1 WHERE id=500939'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest87 WHERE id=500316'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest51 WHERE id=497994'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest77 WHERE id=503818'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest117 SET k=k+1 WHERE id=504972'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest48 WHERE id=498612'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest58 WHERE id=501726'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest45 WHERE id=504439'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest45 WHERE id=560613'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest66 WHERE id=500060'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest30 WHERE id=503732'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest103 SET k=k+1 WHERE id=370805'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest91 SET c='81519401247-35161247986-43037279018-72100986809-17571672983-85080483672-50371239899-31723446133-19047616957-80774083173' WHERE id=423967'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest112 WHERE id=503602'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest94 WHERE id=497535'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest71 WHERE id=497844'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'BEGIN'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest44 SET c='84390273647-67512384597-43589099876-47525411157-13328792516-38454420782-39214814674-23561791534-16643690277-49539737718' WHERE id=504071'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:405: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest80 WHERE id=499215'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest109 WHERE id=494769'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest14 WHERE id=499919'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest2 WHERE id=498246'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest48 WHERE id=500375'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest14 WHERE id=497731'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest3 SET k=k+1 WHERE id=498397'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest77 WHERE id=503872'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:458: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest105 WHERE id=754298'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest106 WHERE id=502986'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 2 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest106 WHERE id=503902'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest57 SET c='42817149827-87817570070-34711620364-48472345984-19277514885-56359915460-65001683077-99555204325-13293448070-11524089244' WHERE id=498188'
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'UPDATE sbtest40 SET c='00079523738-20228379199-65716144662-86615062631-88324886420-20883858231-04118597028-71957704043-73631394190-16351812729' WHERE id=574066'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:469: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
+(last message repeated 1 times)
+FATAL: mysql_drv_query() returned error 2013 (Lost connection to MySQL server during query) for query 'SELECT c FROM sbtest6 WHERE id=499473'
+FATAL: `thread_run' function failed: /usr/share/sysbench/oltp_common.lua:419: SQL error, errno = 2013, state = 'HY000': Lost connection to MySQL server during query
